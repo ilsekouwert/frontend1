@@ -1,0 +1,21 @@
+<html>
+<script>
+    function verzenden(){
+        var xhr = new XMLHttpRequest();
+        xhr.onreadystatechange = function(){
+            alert("anonieme functie");
+        }
+        xhr.open("GET", "http://nos.nl", true);
+        xhr.send();
+
+    }
+
+</script>
+
+<body>
+    <input type="button" value="klik hier" onclick=verzenden()>
+    <div id="resultaat"></div> 
+
+    
+</body>
+</html>
